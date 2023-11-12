@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "apkmanager-12227",
+  "private_key_id": "dfe1b13f205ae93e4bbb6a3bf6dfa49c97e6ecfb",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDVi/yjkt+DihTR\nnPIs7EFqgTzSoNk/GuCc6Ir2xYJ/f0zTqJG7R2jLaT4vwt5/uj9pKw0bwr7NQnam\ngDIBsMHdLhvl3zWaKggDaxCrsuT4grL44YDh2dpLNuiTBdXfaC2h7Y+Uuu1kImrg\nUOU0O9OiPXLkVeuVafs3qPAPH4eyIK0dFBPKQmPzbm6ayTO96yz5M9jmKZnQk7hp\nfu8OuNYr750nHLBg6rdWHha+ILolG50l3Z9Ryj6BGcTooejbVS9yMBlj6uG2Jlrb\nrSvQ1SOe0LRyGGnDcjQcv8NwgI+paAcbIvpY2B0o/o90PFMlQkg5wohkNpMS0E2X\nMyni1tbzAgMBAAECggEADcEa+s7XzlP4pvmkuueqsk6fBB1acM9CiV4MWVGmZ/Tj\nQLzE9NroG+CW90zmDN8KUjP01QVpnwnkCjG2nCzuMlipG64RTfEyxpmWSiDXJk8w\nx4lVcPaZsf+C4mQH/wA+9C+QxcPLzN0kpMxrvuiy5xUYedmI4iegh9i97D4b0jQH\ndJTngYulNpVoSoYsfpBjBlqPxDGTi8S7PRXPoZMhZn2RtlteUeFWXLIshbKUIvko\nFK83gBQnE5cEreU+B6lWGJE0ofBijzZ6lWUiddxvd/uLgf7MragFBZ2pWY9D0p23\ncqW6MwX0GZ8Vz/xripZcs4ijRb3uWq1UlaHGIbGekQKBgQDx/zZjsiYzb72lFsRf\nQEzBSsUcJk3JHSGDRwXMq/6PksmQqOgm/PqlMJrcGXUUVPSG240OFmjrWE9DZBrg\nDc4fOBt822LyoJCYuJTqotBvKnTB7nidGo80xFl3/mL5Q8EhTuwAR7TASafYagUb\nVIdjFIBEvBVEDEcgId+pZdkhAwKBgQDh51U1CO3cJBLcTNUcK7uTgv6A0zl/+r1g\n9oqtrYzDDFGSHMLfvHuLL2+wBc9zDwkiaLibDxvf+fnikVvosjwMR9Q7oZt7hBnr\ngXz/Y28ro/S3kCY7jhGfvNRe4TakSEQmmM5XFXcRaci0XfwtQJQf09xHQJgCPX2m\nIJx8AJl3UQKBgQDbo4Ff9x9I7BA6OHG+6gNAJHbGV9WdxXzXQ6z12N1Qvi+HxmX+\njPmI2JaVUd27uGe/xqE9ugU8JYi7Z64k0SLVnv0D07L499aFZnJyi5eWbfhO0/xQ\nyvxTLiruB8sY5e/yJUl575sUM0XN3FwKNCw1NzQ8LmE2w9YCSfxQKYpqtQKBgQCJ\nmk/crkO1BIQ4jNSDBGCNyg0ci41K14Djv0lZ4Y0MgkRtq/dIMZdPgOWXYvKqM05t\nFzzbtqhUFgCQcdp6M5dAI8CzUg1Tf3QKcCWjqv3cp1I5PiULwc4abvstkCGokBxz\nJkEJ6plMkhMfSuCA8AVKHdLf1AjD1JDk0JiBMBxLAQKBgQDoZ39+CccvIOceDrIH\nmEumvAXmnBa6UFD/QdvoKWSLfU2Cet5ZE8xMlXEctN9y/b1B3wrixs14B5Mr865t\ntQM8BUkhFX/j0xTlZQxBJJXQHvNEqntSL3QYVafzmfvwdZQ2BTUgKU4GiCqxMV9U\nHuRwrg6Q6xwb2YHrGTe+lt/5hA==\n-----END PRIVATE KEY-----\n",
+  "client_email": "storageadmin@apkmanager-12227.iam.gserviceaccount.com",
+  "client_id": "102779658021710548605",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/storageadmin%40apkmanager-12227.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

@@ -1,5 +1,7 @@
-import { Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Get, Post, UploadedFile, UseInterceptors } from '@nestjs/common';
 import { StorageService } from './storage.service';
+import { FileInterceptor } from '@nestjs/platform-express';
+import { UploadFileDto } from './dto/upload-file.dto';
 
 @Controller('storage')
 export class StorageController {
@@ -11,7 +13,12 @@ export class StorageController {
   }
 
   @Post()
-  uploadFile(): string {
-    return this.storageService.uploadFile();
+  @UseInterceptors(FileInterceptor('file'))
+
+  uploadFile(
+    @UploadedFile() file: Express.Multer.File,
+    @Body() body : UploadFileDto
+  ) {
+    return this.storageService.uploadFile(file, body.path);
   }
 }
