@@ -6,6 +6,8 @@ export class StorageService {
         return 'This is storageee';
     }
     uploadFile(): string {
+        const pk = process.env.PRIVATE_KEY;
+        console.log("pk", pk)
         return 'Upload file';
     }
 }
