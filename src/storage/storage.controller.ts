@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Post, UploadedFile, UseInterceptors } from '@nestjs/common';
+import { Body, Controller, Get, Post, UploadedFile, UseInterceptors, Response} from '@nestjs/common';
 import { StorageService } from './storage.service';
 import { FileInterceptor } from '@nestjs/platform-express';
 import { UploadFileDto } from './dto/upload-file.dto';
@@ -15,10 +15,17 @@ export class StorageController {
   @Post()
   @UseInterceptors(FileInterceptor('file'))
 
-  uploadFile(
+  async uploadFile(
     @UploadedFile() file: Express.Multer.File,
-    @Body() body : UploadFileDto
+    @Body() body : UploadFileDto,
+    @Response() res
   ) {
-    return this.storageService.uploadFile2(file, body);
+    if (!file) {
+      return { error: 'No file uploaded.' };
+    }
+    const publicUrl = await this.storageService.uploadFile2(file, body);
+    res.status(200).json({
+      url: publicUrl,
+    });
   }
 }
