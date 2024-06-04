@@ -19,6 +19,6 @@ export class StorageController {
     @UploadedFile() file: Express.Multer.File,
     @Body() body : UploadFileDto
   ) {
-    return this.storageService.uploadFile(file, body.path);
+    return this.storageService.uploadFile2(file, body);
   }
 }

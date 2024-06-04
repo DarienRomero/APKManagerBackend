@@ -1,4 +1,4 @@
 
 export class UploadFileDto {
-    path: string;
+    app_id: string;
 }
