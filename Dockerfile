@@ -1,22 +1,38 @@
-# Usa la imagen oficial de Node.js versión 20 como base
-FROM node:20
+# Etapa 1: Construcción
+FROM --platform=linux/amd64 node:20 AS builder
 
-# Establece el directorio de trabajo en /app
 WORKDIR /app
 
-# Copia el package.json y package-lock.json (si está disponible)
+# Copiar package.json y package-lock.json (si existe)
 COPY package*.json ./
 
-# Instala las dependencias de la aplicación
+# Instalar dependencias solo para construir
 RUN npm install
 
-# Copia el resto de la aplicación al directorio de trabajo
+# Copiar el resto de la aplicación
 COPY . .
 
-# Construye la aplicación NestJS
+# Construir la aplicación
 RUN npm run build
 
-# Expone el puerto 3000
+# Etapa 2: Imagen final
+FROM --platform=linux/amd64 node:20-alpine
+
+WORKDIR /app
+
+# Copiar las dependencias de la etapa de construcción
+COPY --from=builder /app/node_modules ./node_modules
+
+# Copiar el código compilado de la etapa de construcción
+COPY --from=builder /app/dist ./dist
+
+# Copiar otros archivos necesarios
+COPY --from=builder /app/package*.json ./
+
+# Establecer la variable de entorno
+ENV NODE_ENV=production
+
+# Exponer el puerto
 EXPOSE 3000
 
 # Comando para ejecutar la aplicación
