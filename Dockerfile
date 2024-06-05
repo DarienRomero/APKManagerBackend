@@ -11,6 +11,7 @@ RUN npm install
 
 # Copiar el resto de la aplicación
 COPY . .
+COPY src/assets/apkmanager-12227-dfe1b13f205a.json /app/assets/apkmanager-12227-dfe1b13f205a.json
 
 # Construir la aplicación
 RUN npm run build
@@ -25,6 +26,8 @@ COPY --from=builder /app/node_modules ./node_modules
 
 # Copiar el código compilado de la etapa de construcción
 COPY --from=builder /app/dist ./dist
+
+COPY --from=builder /app/assets/ ./assets
 
 # Copiar otros archivos necesarios
 COPY --from=builder /app/package*.json ./

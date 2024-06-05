@@ -12,7 +12,7 @@ export class StorageService {
         // Create a new instance of the Storage class
         this.storage = new Storage({
             projectId: 'apkmanager-12227',
-            keyFilename: './src/assets/apkmanager-12227-dfe1b13f205a.json'
+            keyFilename: './assets/apkmanager-12227-dfe1b13f205a.json'
           });
       }
 
