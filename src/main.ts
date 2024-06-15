@@ -9,7 +9,8 @@ async function bootstrap() {
       whitelist: true,
       forbidNonWhitelisted: true
     })
-  )
+  );
+  console.log("URL CLient", process.env.URL_CLIENT)
   app.enableCors({
     "origin": process.env.URL_CLIENT,
     "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
