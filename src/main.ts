@@ -10,9 +10,9 @@ async function bootstrap() {
       forbidNonWhitelisted: true
     })
   );
-  console.log("URL CLient", process.env.URL_CLIENT)
   app.enableCors({
-    "origin": process.env.URL_CLIENT,
+    "origin": "https://apkmanager.vercel.app",
+    // "origin": process.env.URL_CLIENT,
     "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
     "preflightContinue": false,
     "optionsSuccessStatus": 204
